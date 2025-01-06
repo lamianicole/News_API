@@ -1,4 +1,4 @@
-# Project Overview
+# Project Overview: News API
 
 This project is a simple news feed application using React and TypeScript. It includes a header, a search bar, and a list of news articles fetched from an external API.
 
