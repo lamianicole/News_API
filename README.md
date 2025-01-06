@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple news feed application using React and TypeScript. It includes a header, a search bar, and a list of news articles fetched from an external API.
 
-Currently, two official plugins are available:
+## Main Features
+- Search Functionality: The search bar allows users to search for news articles in different languages.
+- API Integration: Utilizes the NewsAPI to query and display news articles based on user input.
+- Loading Indicator: Displays a loading indicator while retrieving data.
+- The useEffect hook monitors the shouldFetch state. When set to true, the fetchNews function is called, and shouldFetch is immediately reset to false. This prevents multiple fetch requests from being triggered.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+React, TypeScript, CSS
 
-## Expanding the ESLint configuration
+### Setup and Installation
+- Clone the repository: git clone <repository-url>
+- Install dependencies: npm install
+- Create a .env file with your API key: VITE_API_KEY=your_api_key
+- Start the application: npm start
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Preview
+![screenshot](/public/img/API_News_preview.png)
