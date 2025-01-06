@@ -9,13 +9,7 @@ This project is a simple news feed application using React and TypeScript. It in
 - The useEffect hook monitors the shouldFetch state. When set to true, the fetchNews function is called, and shouldFetch is immediately reset to false. This prevents multiple fetch requests from being triggered.
 
 ## Technologies Used
-React, TypeScript, CSS
-
-### Setup and Installation
-- Clone the repository: git clone <repository-url>
-- Install dependencies: npm install
-- Create a .env file with your API key: VITE_API_KEY=your_api_key
-- Start the application: npm start
+React, TypeScript, CSS, HTML
 
 ## Preview
 ![screenshot](/public/img/API_News_preview.png)
